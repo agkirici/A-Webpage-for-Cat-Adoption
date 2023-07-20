@@ -1,0 +1,175 @@
+/*********************************************************************************
+* I confĐrm that this assignment is my own work in accordance with college Academic
+Policy. No part of this assignment has been copied manually or electronically from any
+other source (including web sites) or distributed to any person or website.
+**
+Name: Arzu Gizem Kirici Student ID: 135304210 Date: 22/03/22
+**
+*******************************************************************************/
+
+/* General Styles */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
+  font-family: "Bebas Neue", cursive;
+}
+
+/* Navbar */
+nav {
+  background-color: #b33771;
+}
+nav ul {
+  padding: 10px;
+}
+/* Navbar unordered list list item style */
+nav ul li {
+  list-style-position: none;
+  display: inline;
+  padding: 10px 20px;
+}
+
+/* Navbar unordered list list item link style */
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* by default browser sets small font size for "h1" tag under "article" tag, we reset it to common size */
+main section h1 {
+  font-size: 2em;
+}
+
+/* ADOPTABLES */
+main section#purpose {
+  background: url(assets/background.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  padding: 1%;
+}
+
+main section#purpose * {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main section#purpose h1 {
+  margin-bottom: 20px;
+}
+
+main section#adoptables {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 30px;
+  row-gap: 20px;
+  background-color: #555555;
+}
+
+main section#adoptables > h1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main section#adoptables figure {
+  grid-column: auto;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+}
+
+main section#adoptables figure img {
+  display: block;
+  width: 100%;
+}
+
+main section#adoptables figure figcaption {
+  text-align: center;
+  padding: 10px;
+}
+/* DONATE */
+main section#help {
+  background: #ffffff;
+  display: grid;
+  grid-template: auto auto auto;
+  column-gap: 10px;
+  padding: 20px;
+}
+
+main section#help > h1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main section#help article h1,
+main section#help article h2,
+main section#help article button {
+  text-align: center;
+}
+
+main section#help article h1 {
+  color: #b33771;
+}
+main section#help article h2 {
+  color: #000000;
+  margin-bottom: 20px;
+}
+main section#help article p {
+  margin-bottom: 20px;
+}
+main section#help article > .button-container {
+  text-align: center;
+}
+main section#help article button {
+  color: #ffffff;
+  background: #b33771;
+  border: none;
+  padding: 10px;
+  margin: 0 auto;
+}
+/* FAQ */
+main section#faq {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 30px;
+  background-color: #555555;
+  padding: 20px;
+}
+
+main section#faq > h1 {
+  grid-column: 1;
+  text-align: center;
+}
+
+main section#faq ol {
+  margin: 0 auto;
+}
+main section#faq ol li {
+  list-style-position: inside;
+}
+main section#faq ol li {
+  background: #ffffff;
+  color: #d1d1d1d1;
+  margin: 10px;
+  padding: 10px;
+}
+
+main section#faq ol li:hover {
+  color: #b33771;
+}
